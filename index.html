@@ -155,6 +155,8 @@
 
     <!-- 2) ABOUT -->
     <div id="about" class="page">
+        <h2> RESEARCH INTERESTS </h2>
+        Data Mining and Modeling, Scientific researching, LOGO design, digital writing, media aesthetics, Graphic visualiztion, typography, data visualization
         <h2>👤 ABOUT ME</h2>
         <p><strong>📖 Introduction：</strong> 
             As a data science student, I am passionate about uncovering value from data and skilled at using micro-level analysis to support macro-level decision-making.
@@ -190,7 +192,7 @@
         <h2>📊 SKILLS</h2>
         <div class="skills-block">
             <h3>🔧 Coding Techiniques</h3>
-            <ul><li>Python (pandas, numpy, matplotlib, seaborn)</li><li>SQL </li><li>Excel / Word / PowerPoint</li></ul>
+            <ul><li>Python (pandas, numpy, matplotlib, seaborn)</li><li>SQL </li><li>R Language<li>Solidity / React </li></ul></li></ul><li>Excel / Word / PowerPoint</li></ul>
         </div>
         <div class="skills-block">
             <h3>🛠️ Tools </h3>
@@ -224,35 +226,33 @@
     <!-- 5) CV -->
     <div id="resume" class="page">
         <h2>📄 RESUME / CV</h2>
-        <p>📎 <a href="#" target="_blank">👉 点击下载简历（PDF示例链接）</a> （请替换为你的真实简历链接，如Google Drive或GitHub中的PDF）</p>
+        <p>📎 <a href="#" target="_blank">👉 Click to download CC</a> </p>
     </div>
 
     <!-- 6) contact -->
     <div id="contact" class="page">
         <h2>📬 CONTACT ME</h2>
-        <p>📧 邮箱：<a href="mailto:chenqiwei@LN">chenqiwei@LN.hk</a></p>
+        <p>📧 Mailbox：<a href="mailto:chenqiwei@LN">chenqiwei@LN.hk</a></p>
         <p>✨ Feel free to contact me by email, and I will reply within 24 hours.。</p>
     </div>
 </div>
 
-<!-- 简单的JS：点击左侧切换右边页面 -->
 <script>
-    // 获取所有导航项 和 所有页面
+  
     const navItems = document.querySelectorAll('.nav-item');
     const pages = document.querySelectorAll('.page');
 
-    // 为每个导航添加点击事件
     navItems.forEach(item => {
         item.addEventListener('click', function() {
-            // 1. 移除所有导航的 active 样式
+          
             navItems.forEach(nav => nav.classList.remove('active'));
-            // 2. 给当前点击的导航添加 active
+        
             this.classList.add('active');
 
-            // 3. 隐藏所有页面
+        
             pages.forEach(page => page.classList.remove('active-page'));
             
-            // 4. 显示对应的页面（通过 data-page 属性匹配 id）
+          
             const pageId = this.getAttribute('data-page');
             const activePage = document.getElementById(pageId);
             if(activePage) {
