@@ -18,12 +18,13 @@
         body {
             font-family: 'Lora', sans-serif;
             background: background: linear-gradient(180deg, #F2F2F2, #E5E5E5, #D9D9D9);
-            height: 100vh;
-            display: flex;
+            min-height: 100vh;
             line-height: 1.7;
             letter-spacing: 0.3px;
             font-size: 17px;
             color:#333;
+            margin: 0;
+            padding: 0;
         }
 
         /* ========= Left ========= */
@@ -176,7 +177,7 @@
             
         @media (max-width: 768px) {
             body {
-                display: flex;
+                display: block;
                 flex-direction: column;
             }
             .sidebar {
