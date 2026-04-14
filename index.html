@@ -16,7 +16,7 @@
         }
 
         body {
-            font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
             background: background: linear-gradient(135deg, #F0F0F0, #A0A0A0, #7B7B7B);
             height: 100vh;
             display: flex;
@@ -29,7 +29,8 @@
         /* ========= Left ========= */
         .sidebar {
             width: 260px;
-            background-color: #7B7B7B;
+            background-color: transparent;
+            border-right: 1px solid rgba(0,0,0,0.1);
             color: white;
             display: flex;
             flex-direction: column;
@@ -39,11 +40,14 @@
         }
 
         .nav-item {
+            font-family: 'Inter', sans-serif;
             padding: 16px 24px;
-            font-size: 18px;
+            font-size: 16px;
+            letter-spacing: 0.5px;
             cursor: pointer;
             transition: 0.2s;
             border-left: 4px solid transparent;
+            color: #444;
         }
         .profile-photo {
             width: 180px;
@@ -111,7 +115,8 @@
         }
 
         h1,h2,h3 {
-            font-weight:700;
+            font-family: "Didot", "Bodoni MT", serif:
+            font-weight:400;
             letter-spacing: 0.5px;
             border-bottom: 3px solid #00a8ff;
             padding-bottom: 8px;
@@ -156,7 +161,7 @@
             text-decoration: underline;
         }
         .content {
-            padding: 40px 60px;
+            padding: 60px 80px;
         }
             
         @media (max-width: 768px) {
