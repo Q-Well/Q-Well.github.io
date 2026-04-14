@@ -139,6 +139,23 @@
             text-decoration: underline;
         }
         @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .content {
+                width 100%;
+                padding 20px;
+            }
             .hero-title {
                 font-size: 28px;
             }
